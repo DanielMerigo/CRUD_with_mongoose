@@ -158,21 +158,7 @@ function seed() {
             res.json(values)
         })
     })
-
-    //Argentina, Bolívia, Brasil, Chile, Colômbia, Equador, Guiana,, Paraguai, Peru, Suriname, Uruguai e Venezuela
-app.get("/persons_south_american", (req, res) => {
-    db.find({$or:[{country: "Brazil"}, {country: "Argentina"}, {country: "Bolivia"}, {country: "Chile"}, {country: "Colombia"}, {country: "Equador"}, {country: "Guiana"}, {country: "Paraguai"}, {country: "Peru"}, {country: "Suriname"}, {country: "Uruguai"}, {country: "Venezuela"} ]}).then(values => {
-        res.json(values)
-    });
-});
-
-
-
-
-
-    
-
-
+   
 //Searches the oldest person in the database
 // function selectAge() {
 //   db.findOne().sort({age: -1}).then((c) => {
